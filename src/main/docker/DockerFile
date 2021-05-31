@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/ClientFirstApp-0.0.1-SNAPSHOT.jar ClientFirstApp-0.0.1-SNAPSHOT.jar
+EXPOSE 8085
+ENTRYPOINT ["java","-jar","ClientFirstApp-0.0.1-SNAPSHOT.jar"]
